@@ -169,5 +169,47 @@ print("I guessed the right number! It was",secret_number)
 
 ex6
 -------
+temperature = 22  # Example temperature
 
+if temperature < 20:
+    print("It might be cold! You might need a jacket.")
+else:
+    print("It's warm! Enjoy the sunshine.")
+
+
+ex7.
+------
+temperature = 15  # Let's assume the temperature is 15 degrees Celsius
+
+if temperature < 10:
+    print("Wear a jacket! It's cold out there.")
+elif 10 <= temperature < 20:
+    print("A light sweater should be fine. It's a bit chilly.")
+elif 20 <= temperature < 30:
+    print("Enjoy the pleasant weather! No need for extra layers.")
+else:
+    print("It's hot! Stay hydrated and wear sunscreen.")
+    
+
+
+ex8.
+------
+# Example: Keep asking for input until the user enters "quit"
+user_input = ""
+while user_input != "quit":
+    user_input = input("Enter something (or 'quit' to exit): ")
+    print("You entered:", user_input)
+    
+
+ex9.
+-------
+numbers = [3, 9, 1, 10, 5, 2, 8]
+
+### Your code here
+for num in numbers:
+    if num % 2 ==0:
+        print(f"{num} is even")
+    else:
+        print(f"{num} is odd")
+            
 """
