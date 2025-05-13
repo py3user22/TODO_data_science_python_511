@@ -1,0 +1,52 @@
+"""practice questions 051225' """
+
+1) a weather app needs to display icons for temp. IF its above 30degree Celsius, a sun icon is shown, IF temp below 0,
+  a ice icon is shown, a cloud icon for temps between 0 & 30 degrees.
+  Which conditional statement is most suitable?
+  >> combo of if, elif, else
+
+2) U r dev. a game wher the player has to guess a secret between 1 & 100.
+  Which loop construct is most suitable?
+  >>
+  x.. either for/whileX
+
+3) U r designing a program to control a robot that maze navigates.  Robot needs to make decisions base on the presence
+  of obstabcles & choose the correct direction to move.  When the robot encounters a obstacle,
+  Which control flow mechanism is most suitable?
+  >>
+  x.. combo of for/whileX
+
+4) U want to suggest options for seeing the values of variables at certain locations in the program
+  >> use a debugger to step thru
+  >> add print statements in key locations
+
+5) U r working on large py3 project w/ many modules.  U get errors related to variables not being accessible in certain
+  parts of the code.  Which factors could be contributing to errors?
+  >> using the same name for variables in different parts of the code
+  >> variables being defined w/in a func. & then accessed outside the scope
+  >> incorrect indention
+
+6) a software dev. is tasked w/ creating a program to store a sequence of images for an animation.
+  Which char. of list would be useful for ensuring images displayed in correct order?
+  >> Order
+
+7) a social media app needs to store: user posts, text, images, videos.
+  What char of list makes them suitable for managing diverse content?
+  >> Versatility
+
+8) a task mgmt app uses list to store user task.
+  Which feature of list contributes to the ability to store different kinds of info about each task,
+  such as title, due date, priority w/in the same list?
+  >> mutability
+  >> versatility
+  >> order
+
+9) a data analyst has a list of sales figures for the past year, but only needs the last quarter data
+  Which technique would efficiently extract this subset of data?
+  >> slicing
+  x.. list compX
+
+10) a software engineer is dev. a program to manage a que of tasks.
+  New task are added to the end == append()
+  completed task are removed from the start == pop()
+
