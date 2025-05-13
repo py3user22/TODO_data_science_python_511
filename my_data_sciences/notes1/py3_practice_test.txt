@@ -50,3 +50,7 @@
   New task are added to the end == append()
   completed task are removed from the start == pop()
 
+11) Which scenario demonstrates the concept of polymorphism in py3 classes?
+  >> Vehicle class w/ subclasses like Car & Motorcycle, that share the Vehicle methods, & add their own
+  >> responds to the same message (accelerate() ) in own way, reflecting unique chars.
+
