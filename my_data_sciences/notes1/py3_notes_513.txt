@@ -11,3 +11,16 @@ str() - string conversion
 # manipulating strings using .
 >> .upper()
 >> .lower()
+
+
+The __init__ method: special constructor
+----------------------------------------
+primary role is to initialize the objects attributes w/ appropriate values.
+Ensuring every new object starts w/ a valid state.
+
+class Car:
+    def __init__(self, make, model, year, color):
+        # ... (initializes attributes)
+        # sets the attributes based on the values provided when creating a Car object
+
+

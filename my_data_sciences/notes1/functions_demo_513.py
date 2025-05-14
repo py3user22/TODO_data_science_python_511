@@ -84,4 +84,77 @@ print("Text addition: Adding text_value (33) to int_value_as_text (15):", text_v
 
 
 #/////////////////////////////
+
+#ex4  classes demo
+# encapsulation -->
+class BankAccount:
+  def __init__(self, balance):
+    self._balance = balance  # Private attribute
+
+  def deposit(self, amount):
+    self._balance += amount
+
+  def get_balance(self):
+    return self._balance
+
+
+#ex5  abstraction -- module > ' abc '  >> (abstract base classes)
+# serve as blueprints for other classes, outlining essential methods that subclasses must implement
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):  # Abstract base class
+    @abstractmethod
+    def make_sound(self):
+        pass
+
+class Dog(Animal):  # Concrete subclass
+    def make_sound(self):
+        return "Bark!"
+
+
+# ex6 character class demo
+class Character:
+  def __init__(self, name, health, strength, speed):
+    self._name = name
+    self._health = health
+    self._strength = strength
+    self._speed = speed
+
+
+
+#ex7 car class
+  class Car:
+    def __init__(self, make, model, year, color):
+      self.make = make
+      self.model = model
+      self.year = year
+      self.color = color
+      self.fuel_level = 100  # Initial fuel level
+
+    def start_engine(self):
+        print(f"The {self.year} {self.make} {self.model}'s engine roars to life!")
+
+    def accelerate(self):
+        print(f"The {self.color} {self.make} {self.model} picks up speed!")
+
+    def brake(self):
+        print(f"The {self.make} {self.model} comes to a smooth stop.")
+
+
+#ex8 dog class
+class Dog:
+  def __init__(self, name, breed):
+    self._name = name
+    self._breed = breed
+
+  def bark(self):
+    print(f"Woof! My name is {self._name}, and I am {self._breed}.")
+
+# Creating the instance of the Dog class (step 4)
+my_dog = Dog("Buddy", "Golden Retriever")
+# Directing the dog to bark (step 5)
+my_dog.bark()
+
+
 #/////////////////////////////
