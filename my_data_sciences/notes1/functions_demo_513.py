@@ -158,3 +158,14 @@ my_dog.bark()
 
 
 #/////////////////////////////
+
+
+#ex9 function w/ no parameters
+
+def happy_birthday():
+    print("Happy Birthday @ 051425!")
+
+happy_birthday()
+
+#/////////////////////////////
+
