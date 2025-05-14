@@ -1,0 +1,13 @@
+len() - measures the size
+
+input() - gathers input as a string
+
+type() - determines the data type of value/variable
+
+int() - converts to an integer
+float() - decimal conversion
+str() - string conversion
+
+# manipulating strings using .
+>> .upper()
+>> .lower()

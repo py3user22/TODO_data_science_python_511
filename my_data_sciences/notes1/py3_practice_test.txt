@@ -44,7 +44,6 @@
 9) a data analyst has a list of sales figures for the past year, but only needs the last quarter data
   Which technique would efficiently extract this subset of data?
   >> slicing
-  x.. list compX
 
 10) a software engineer is dev. a program to manage a que of tasks.
   New task are added to the end == append()
