@@ -253,6 +253,25 @@ def make_sandwich(bread_type: str, filling: str, cheese=None, toasted=False):
     :return:
     """
 
+    str1_no_cheese = f"Making a {bread_type} sandwich with {filling}."
+    str2_w_cheese = f"Making a {bread_type} sandwich with {filling} and {cheese} cheese."
+
+    str3_toasted = f"Making a toasted {bread_type} sandwich with {filling}."
+    str4_toasted_and_cheese = f"Making a toasted {bread_type} sandwich with {filling} and {cheese} cheese."
+
+    if toasted == True and cheese != None:
+        return str4_toasted_and_cheese
+    elif toasted == False and cheese != None:
+        return str2_w_cheese
+    elif toasted == True and cheese == None:
+        return str3_toasted
+    else:
+        return str1_no_cheese
+
+
+
+
+"""demo1 needs edits
     if toasted == True:
         return f"Making a toasted {bread_type} sandwich with {filling}."
     else:
@@ -262,8 +281,7 @@ def make_sandwich(bread_type: str, filling: str, cheese=None, toasted=False):
         return f"Making a {bread_type} sandwich with {filling} and {cheese} cheese."
     else:
         return f"Making a {bread_type} sandwich with {filling}."
-
-    return 0
+"""
 
 #////////////////////////////////
 #////////////////////////////////

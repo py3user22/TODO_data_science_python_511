@@ -23,4 +23,39 @@ class Car:
         # ... (initializes attributes)
         # sets the attributes based on the values provided when creating a Car object
 
+Data Science & ML
+------------------------------------
+NumPy -- handling of arrays & matrices.  Allows for the simple addition of two arrays in a single operation.
 
+Pandas -- data manipulation & analysis.  Makes data cleaning, transform, excels at handling missing data, reshaping data
+  structures, performing time series analysis.
+
+  ex1.  CSV w/ sales data, easily read file into dataFrame, filter rows based on specific criteria,
+    calculate summary statistics, even pivot the data to create cross-tab of sales by product& region.
+
+Matplotlib -- visualization library, complete control over the appearance of your plots,.
+  ex1. Use to create a scatter plot of sales data,
+
+Scikit-learn -- toolkit for Machine Learning, includes tools for data preprocessing (scaling, normalization, feature selection)
+  model selection, performance evaluation.
+
+OpenCV -- library for computer vision tasks, works w/ images & videos, performs object detection, image processing, feature extraction.
+  can detect faces, track objects in videos, recognize handwritten digits, make panorama images.
+
+Scrapy -- framework for building web crawlers, that explore & extract data from websites.
+  link following, data extraction, data storage.
+
+  ex1. build a crawler that collects real estate listings from various websites, the crawler would
+  navigate thru different pages, extract data like property type, location, price, & # of bedrooms,
+
+Beautiful soup -- specializes in web scraping, extracting data from html & xml files.
+
+  ex1.  want to scrape product data from an e-commerce website.  The library will parse the website, extract details like
+  product name, price, desc, & reviews,
+
+Request -- process of interacting w/ web services, you easily send http request, fetch data from APIs, handle responses.
+
+  ex1. use the request library to fetch the latest news headlines from a news API.
+  Simple to construct a API endpoint url,  send a GET request, then parse the JSON response,
+
+Flask --

@@ -46,3 +46,19 @@ ex.3  for loops, counting from 10-0 backwards
 for x in range(10, -1, -1):   if x ==5: print("special message").  else: print(x)
 
 """
+
+
+#ex 515  count vowels function
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+"""
+sentence = "This is a test sentence to count vowels."
+vowel_count = string_utils.count_vowels(sentence)
+print("Number of vowels:", vowel_count)   # 12
+"""
