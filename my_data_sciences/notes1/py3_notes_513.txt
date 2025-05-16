@@ -59,3 +59,14 @@ Request -- process of interacting w/ web services, you easily send http request,
   Simple to construct a API endpoint url,  send a GET request, then parse the JSON response,
 
 Flask --
+
+
+#==============================================
+
+pip list: Quickly view all installed packages and their versions.
+
+pip show <package>: Get detailed information about a specific package, including its dependencies and location.
+
+pip freeze: Generate a list of your installed packages suitable for a requirements.txt file, perfect for sharing your project's dependencies.
+
+pip check: Verify your environment for any dependency conflicts, helping prevent unexpected errors.

@@ -169,3 +169,107 @@ happy_birthday()
 
 #/////////////////////////////
 
+# ex10 creating values for a dictionary
+students_info = {}  # blank dict
+
+students_info['Alice'] = {'Grade': 90, 'Contact': 'alice@example.com'}
+students_info['Bob'] = {'Grade': 85, 'Contact': 'bob@example.com'}
+students_info['Carol'] = {'Grade': 95, 'Contact': 'carol@example.com'}
+
+
+# ex10.1   create {} and values
+# Add the SKU data provided to the product catalog dictionary
+product_catalog = {}
+
+product_catalog['SKU123'] = {'Name': 'Widget A', 'Price': 19.99, 'Quantity': 50}
+product_catalog['SKU456'] = {'Name': 'Gadget B', 'Price': 34.95, 'Quantity': 25}
+product_catalog['SKU789'] = {'Name': 'Gizmo C', 'Price': 9.99, 'Quantity': 100}
+
+print(f"The price of {product_catalog['SKU123']['Name']} is ${product_catalog['SKU123']['Price']}")
+"""output:  >>  The price of Widget A is $19.99"""
+
+
+
+#////////////////////////////////////////
+#ex2
+# Defining the dictionary
+products = {
+    "item1": {"name": "Laptop", "price": 1200, "stock": 10},
+    "item2": {"name": "Phone", "price": 800, "stock": 25},
+    "item3": {"name": "Tablet", "price": 450, "stock": 15}
+}
+
+# Printing name and price from the nested dictionary
+for key, value in products.items():
+    print(f"Product: {value['name']}, Price: ${value['price']}")
+
+
+
+#ex3 specific entry called
+# Defining the dictionary
+products = {
+    "item1": {"name": "Laptop", "price": 1200, "stock": 10},
+    "item2": {"name": "Phone", "price": 800, "stock": 25},
+    "item3": {"name": "Tablet", "price": 450, "stock": 15}
+}
+
+# Accessing name and price of item1
+item1_name = products["item1"]["name"]
+item1_price = products["item1"]["price"]
+
+# Printing the values
+print(f"Product: {item1_name}, Price: ${item1_price}")
+
+#////////////////////////////////////////
+
+#ex11
+shopping_list = ["apples", "bananas", "milk"]  # List for items
+item_quantities = {"apples": 3, "bananas": 1}  # Dictionary for quantities
+
+# User adds an item
+shopping_list.append("eggs")
+item_quantities["eggs"] = 12
+
+# User increases the quantity of bananas
+item_quantities["bananas"] += 2
+
+# User removes apples
+shopping_list.remove("apples")
+del item_quantities["apples"]
+
+# Print updated list and dictionary
+print(shopping_list)
+print(item_quantities)
+
+"""
+['bananas', 'milk', 'eggs']
+{'bananas': 3, 'eggs': 12}
+"""
+
+
+#ex12  create a cart
+# Create an empty list to represent the shopping cart
+shopping_cart = []
+
+# Add items to the shopping cart
+shopping_cart.append("apple")
+shopping_cart.append("banana")
+shopping_cart.append("milk")
+
+print("Shopping Cart:")
+# Print the contents of the shopping cart
+for item in shopping_cart:
+    print(item)
+
+
+#///////////////////////////////
+#ex tuples () & sets {}
+
+# Tuples
+coordinates = (37.7749, -122.4194)  # Latitude, longitude of San Francisco
+birth_date = (1990, 12, 25)       # Year, month, day
+
+# Sets
+unique_colors = {"red", "green", "blue"}
+numbers = [1, 2, 2, 3, 4, 4, 5]
+unique_numbers = set(numbers)    # Removes duplicates
