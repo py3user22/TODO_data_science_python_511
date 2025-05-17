@@ -118,7 +118,7 @@ except ZeroDivisionError:
 except TypeError:
     print("Error: Invalid data types")
 
-
+"""
 #ex5 logging demo
 import logging
 
@@ -129,7 +129,6 @@ except Exception as e:
 
 
 #ex7 custom exceptions
-"""
 class InvalidCredentialsError(Exception):
     pass
 
@@ -146,11 +145,95 @@ def read_file_contents(file_path):
             print(contents)
     except FileNotFoundError:
         print("Error: File not found -", file_path)
-    finally:
-        file.close()
 
 
 #//////////////////////
+
+#517 debugging demo  >> test.py
+# after save, to call cmd: >>  python test.py
+
+import unittest
+import statistics
+
+class TestDebugger(unittest.TestCase):
+
+    def setUp(self):
+        pass
+
+    def test_string(self):
+        self.assertEqual(int("10"), 10)
+
+if __name__ == '__main__':
+    unittest.main()
+
+#ex.1
+sample_list = [1, 2, 3, "a"]
+sample_list = [
+    x for x in sample_list if type(x) == int
+]
+statistics.mean(sample_list)
+
+
+#ex2  og file, needs edits
+def calculatediscount(price, percentage):
+    if percentage < 0 or percentage > 100:
+        return "Invalid discount percentage" # Incorrect behavior
+    discountamount = price * (percentage / 100)
+    return price - discountamount
+print(calculatediscount(100, 150)) # Should be an error
+
+
+#ex2.1  new edits
+def calculate_discount(price, percentage):
+    if percentage < 0 or percentage > 100:
+        raise ValueError("Discount percentage must be between 0 and 100")
+    discount_amount = price * (percentage / 100)
+    return price - discount_amount
+try:
+    print(calculate_discount(100, 150))
+except ValueError as e:
+    print(f"Error: {e}")
+
+#output:  Error: Discount percentage must be between 0 and 100
+
+
+#ex3. using import logging
+import logging
+logging.basicConfig(filename='myapp.log', level=logging.DEBUG)
+def divide(x, y):
+    try:
+        result = x / y
+        logging.info(f"Successfully divided {x} by {y} to get {result}")
+        return result
+    except ZeroDivisionError:
+        logging.error("Division by zero attempted!")
+        return None
+divide(10, 2)
+divide(5, 0)
+
+""" output:  will create a log file 'myapp.log' in the current directory
+INFO: Successfully divided 10 by 2 to get 5.0
+ERROR: Division by zero attempted!
+"""
+
+
+#ex4 og file, needs edits.
+def calculate_discount(price, discount_percentage):
+  discount_amount = price * (discount_percentage / 100)
+  discounted_price = price + discount_amount
+  return discounted_price
+
+#ex4.1  new edits, was adding the discount, not subtraction
+def calculate_discount(price, discount_percentage):
+  discount_amount = price * (discount_percentage / 100)
+  discounted_price = price - discount_amount
+  return discounted_price
+
+
+
+
+
+
 #//////////////////////
 #//////////////////////
 #//////////////////////
